@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL ||
+  "http://127.0.0.1:8000";
+
+
+
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +25,7 @@ function Login() {
       // =================================================
 
       const response = await fetch(
-        "http://127.0.0.1:8000/api/auth/login/",
+        '${API_BASE_URL}/api/auth/login/',
         {
           method: "POST",
           headers: {
@@ -66,7 +72,7 @@ function Login() {
       // =================================================
 
       const userResponse = await fetch(
-        "http://127.0.0.1:8000/api/auth/me/",
+        '{API_BASE_URL}/api/auth/me/',
         {
           method: "GET",
           headers: {
