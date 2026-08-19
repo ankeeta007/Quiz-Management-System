@@ -21,7 +21,7 @@ function StudentResult() {
 
       try {
         const response = await fetch(
-          `http://127.0.0.1:8000/api/attempts/${attemptId}/result/`,
+          `https://quiz-management-system-o5i7.onrender.com/api/attempts/${attemptId}/result/`,
           {
             method: "GET",
             headers: {

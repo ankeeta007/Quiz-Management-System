@@ -27,7 +27,7 @@ function StudentHistory() {
         setError("");
 
         const response = await fetch(
-          "http://127.0.0.1:8000/api/attempts/history/",
+          "https://quiz-management-system-o5i7.onrender.com/api/attempts/history/",
           {
             method: "GET",
             headers: {

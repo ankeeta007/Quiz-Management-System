@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_URL ||
-  "http://127.0.0.1:8000";
+  "https://quiz-management-system-o5i7.onrender.com";
 
 console.log("API BASE URL:", API_BASE_URL);
 

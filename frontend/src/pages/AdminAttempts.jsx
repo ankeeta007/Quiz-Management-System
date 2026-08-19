@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function AdminAttempts() {
-  const API_URL = "http://127.0.0.1:8000/api";
+  const API_URL = "https://quiz-management-system-o5i7.onrender.com/api";
   const navigate = useNavigate();
 
   const [attempts, setAttempts] = useState([]);

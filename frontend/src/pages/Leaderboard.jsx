@@ -23,7 +23,7 @@ function Leaderboard() {
         setError("");
 
         const response = await fetch(
-          "http://127.0.0.1:8000/api/dashboard/api/leaderboard/",
+          "https://quiz-management-system-o5i7.onrender.com/api/dashboard/api/leaderboard/",
           {
             method: "GET",
             headers: {

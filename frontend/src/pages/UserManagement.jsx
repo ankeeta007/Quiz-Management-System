@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function UserManagement() {
-  const API_URL = "http://127.0.0.1:8000/api";
+  const API_URL = "https://quiz-management-system-o5i7.onrender.com/api";
 
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);

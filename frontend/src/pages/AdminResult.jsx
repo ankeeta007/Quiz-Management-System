@@ -34,7 +34,7 @@ function AdminResult() {
         setError("");
 
         const response = await fetch(
-          `http://127.0.0.1:8000/api/admin/attempts/${attemptId}/`,
+          `https://quiz-management-system-o5i7.onrender.com/api/admin/attempts/${attemptId}/`,
           {
             method: "GET",
             headers: {

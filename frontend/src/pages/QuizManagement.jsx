@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 function QuizManagement() {
-  const QUIZ_API = "http://127.0.0.1:8000/api/quizzes/";
-  const CATEGORY_API = "http://127.0.0.1:8000/api/categories/";
+  const QUIZ_API = "https://quiz-management-system-o5i7.onrender.com/api/quizzes/";
+  const CATEGORY_API = "https://quiz-management-system-o5i7.onrender.com/api/categories/";
 
   const emptyForm = {
     title: "",
