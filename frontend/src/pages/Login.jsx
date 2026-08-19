@@ -4,6 +4,8 @@ const API_BASE_URL =
   import.meta.env.VITE_API_URL ||
   "http://127.0.0.1:8000";
 
+console.log("API BASE URL:", API_BASE_URL);
+
 
 
 function Login() {
@@ -25,7 +27,7 @@ function Login() {
       // =================================================
 
       const response = await fetch(
-        '${API_BASE_URL}/api/auth/login/',
+        `${API_BASE_URL}/api/auth/login/`,
         {
           method: "POST",
           headers: {
@@ -40,7 +42,9 @@ function Login() {
 
       const data = await response.json();
 
+      console.log("LOGIN STATUS:", response.status);
       console.log("LOGIN RESPONSE:", data);
+
 
       if (!response.ok) {
         setError(
@@ -72,11 +76,12 @@ function Login() {
       // =================================================
 
       const userResponse = await fetch(
-        '{API_BASE_URL}/api/auth/me/',
+        `${API_BASE_URL}/api/auth/me/`,
         {
           method: "GET",
           headers: {
             Authorization: `Bearer ${data.access}`,
+            "Content-Type": "application/json",
           },
         }
       );

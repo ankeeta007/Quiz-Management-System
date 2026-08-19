@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "False")== "True"
 
-ALLOWED_HOSTS = ["quiz-management-system-o5i7.onrender.com"]
+ALLOWED_HOSTS = ["127.0.0.1","localhost"]
 
 
 # Application definition
